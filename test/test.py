@@ -18,13 +18,13 @@ async def test_one(dut):
     dut.rst_n.value = 0
     await ClockCycles(dut.clk,1)
     dut.rst_n.value = 1
-    await ClockCycles(dut.clk,1)
+    await ClockCycles(dut.clk,2)
     dut.rst_n.value = 0
     dut.ena.value  = 1
     dut.ui_in.value = 0b0000_0001
     await ClockCycles(dut.clk,1)
     dut.ui_in.value  = 0b0000_0000
-    await ClockCycles(dut.clk,1)
+    await ClockCycles(dut.clk,2)
     dut.ui_in.value  = 0b0000_0001
     await ClockCycles(dut.clk,2)
     dut.ui_in.value = 0b0000_0000
