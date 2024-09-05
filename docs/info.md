@@ -3,6 +3,7 @@
 
 This is a simple circuit to calculate: 
 - a simple add but temporal ...
+- it's one out due to enable
 
 ## How to test
 
